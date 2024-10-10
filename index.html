@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Universe of Articles - Tu universo de productos">
+    <title>Universe of Articles</title>
+    <link rel="stylesheet" href="diseempresa.css"> 
+    <script src="animaempre.js" defer></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logoempre.png" alt="Logo de Universe of Articles">
+            </div>
+            <div class="slogan">
+                <h1>CONECTA TUS IDEAS, VENDEMOS TUS SUEÑOS</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido a Universe of Articles</h2>
+            <p>Explora nuestro universo de productos únicos y de alta calidad</p>
+            <a href="#products" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una empresa dedicada a ofrecer artículos únicos y especiales. Nuestro objetivo es brindarte lo mejor del mercado, adaptado a tus necesidades.</p>
+        <img src="imaart.png" alt="Universo de artículos">
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Nuestros Productos</h2>
+        <div class="product-gallery">
+            <div class="producto">
+                <img src="https://sirse.info/wp-content/uploads/2019/07/tienda-ropa-800x500_c.jpg" alt="Producto 1">
+                <h3>Ropa</h3>
+                <p>Te proporcionamos ropa de mucha calidad, de todas las tallas</p>
+                <span class="precio">$5.00 a $30.00</span>
+                <button onclick="abrirCarrito()">Comprar Ahora</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://centrosantafe.com.mx/cdn/shop/articles/conoce-algunas-de-las-mejores-joyer-as-en-m-xico.jpg?v=1549065490" alt="Producto 2">
+                <h3>Joyas</h3>
+                <p>Joyas hermosas para tu día a día, alta calidad</p>
+                <span class="precio">$3.00 a $50.00</span>
+                <button onclick="abrirCarrito()">Comprar Ahora</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://www.ciclocampeon.com/wp-content/uploads/2019/12/Grupo-de-cambios-Shimano-Altus-M2000-ciclocampeon-medell%C3%ADn.jpg" height="200" width="200" alt="Producto 3">
+                <h3>Ciclismo</h3>
+                <p>Articulos y repuetsos para disfrutar de un dia al aire libre en tu bicicleta, alta calidad</p>
+                <span class="precio">$8.00 a $150.00</span>
+                <button onclick="abrirCarrito()">Comprar Ahora</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://www.oleoshop.com/imagenes/poridentidad?identidad=f9727a60-33d7-4fad-8704-832e6176e015&ancho=850&alto=" alt="Producto 4">
+                <h3>Calzado</h3>
+                <p>Calzado para siempre andar a la moda, todo tipo de tallas de alta calidad </p>
+                <span class="precio">$12.00 a $120.00</span>
+                <button onclick="abrirCarrito()">Comprar Ahora</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://muchosnegociosrentables.com/wp-content/uploads/2016/04/comprar-perfumes-originales-para-vender.jpg" alt="Producto 5">
+                <h3>Perfumes</h3>
+                <p>Siempre huele bien, para tus ocaciones más importantes, perfumes de alta calida </p>
+                <span class="precio">$14.00 a $130.00</span>
+                <button onclick="abrirCarrito()">Comprar Ahora</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://blog.cosmeticosalpormayor.com/hs-fs/hubfs/Canva%20images/presentacion-de-producto.png?width=500&name=presentacion-de-producto.png" alt="Producto 6">
+                <h3>Cosmeticos</h3>
+                <p>Siempre luce hermosa para el mundo y para tí, cosmeticos de alta calida</p>
+                <span class="precio">$10.00 a $60.00</span>
+                <button onclick="abrirCarrito()">Comprar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <form id="formularioCompra" onsubmit="realizarCompra(event)">
+            <label for="pais">País o Región:</label>
+            <input type="text" id="pais" name="pais" required>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento" name="departamento" required>
+            <label for="municipio">Municipio:</label>
+            <input type="text" id="municipio" name="municipio" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Los derechos reservados.</p>
+        <p>WhatsApp: +503 60391090 | Correo: fg571879@gmail.com</p>
+    </footer>
+</body>
+</html>

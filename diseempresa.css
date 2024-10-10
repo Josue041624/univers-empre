@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3e2723; 
+    color: white;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.logo img {
+    height: 100px;  
+    width: 100px;
+}
+.hero {
+    background-image: url('https://cc-prod.scene7.com/is/image/CCProdAuthor/Image4?$pjpeg$&jpegSize=200&wid=720');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: #795548; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #5d4037; 
+}
+.about-section, .products-section {
+    padding: 50px;
+    background-color: #000; 
+    color: white;           
+    text-align: center;
+    position: relative;     
+    overflow: hidden;       
+}
+.leaf {
+    position: absolute;
+    width: 150px;         
+    height: 150px;
+    background-image: url('imaho.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fall linear infinite;
+    opacity: 0.0.5;         
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+.producto {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(97, 97, 97);
+    border: 1px solid #ddd;
+    width: 300px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+.producto h3 {
+    margin: 10px 0;
+}
+.producto .precio {
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.producto button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.carrito {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 300px;
+    width: 70%;
+    text-align: left;
+}
+.carrito h2 {
+    text-align: center;
+}
+.carrito label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.carrito input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+.carrito button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .about-section, .products-section {
+        padding: 20px;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .carrito {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .about-section, .products-section {
+        padding: 10px;
+    }
+}
+
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
